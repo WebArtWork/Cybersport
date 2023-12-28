@@ -1,0 +1,9 @@
+{% for match in matches %}
+<a href="/match/{{{match.id}}}" class="match__item">
+	<h1>{{{match.name}}}</h1>
+	<img src="{{{match.thumb}}}" alt="{{{match.name}}}">
+	<pre>
+		{{{match.short}}}
+	</pre>
+</a>
+{% endfor %}
